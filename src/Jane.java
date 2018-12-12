@@ -10,8 +10,7 @@ public class Jane extends  Computer{
 
     public void patiences(Player player){
         if (patience <= 0) {
-            System.out.println("Unlike Bill, I was not impressed with your answers. Afraid I'm going have to stop the programme " + player.getPlayerName() + ".");
-            myScanner.nextLine();
+            CommonMethods.printALine("Unlike Bill, I was not impressed with your answers. Afraid I'm going have to stop the programme " + player.getPlayerName() + ".");
             System.exit(0);
         }
     }

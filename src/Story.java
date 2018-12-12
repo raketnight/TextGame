@@ -12,7 +12,7 @@ public class Story {  //story line of the game, Im so sick of it hope its fresh 
 
 
     public void story1(Player player, Bill bill, Jane jane){
-        System.out.println("\n------------------------------------------------------------------------------------------------------------------------------------\n");
+        CommonMethods.drawLine();
         CommonMethods.printALine("hopefully this time we ca- BILL! IT'S RUNNING!");
         CommonMethods.printALine("OH! umf.. Hel-Hello Player and welcome to the game.");
         CommonMethods.printALine("As you can see, pressing enter will progress yo- progress the story. \nBut you should already know that by now");
@@ -39,12 +39,11 @@ public class Story {  //story line of the game, Im so sick of it hope its fresh 
         CommonMethods.choiceOption("Account Number:");
         player.setCardNumber(myScanner.nextInt());
         myScanner.nextLine();
-        //System.out.println("\n------------------------------------------------------------------------------------------------------------------------------------\n");
         story2(player, bill, jane);
     }
 
     public void story2(Player player, Bill bill, Jane jane){
-        System.out.println("\n------------------------------------------------------------------------------------------------------------------------------------\n");
+        CommonMethods.drawLine();
         CommonMethods.printALine("Okay " + player.getPlayerName() + ", we've filled in all the variables for your player class, so now it's time\nfor some tests.");
         System.out.println("Lets start nice and easy, can you tell me what what 9 +10 is?");
         System.out.println("*The choices are:*\n1)19\n2)21");
@@ -74,7 +73,7 @@ public class Story {  //story line of the game, Im so sick of it hope its fresh 
     }
 
     public void story3(Player player, Jane jane, Bill bill) {
-        System.out.println("\n------------------------------------------------------------------------------------------------------------------------------------\n");
+        CommonMethods.drawLine();
         CommonMethods.printALine("Hey Jane, I'm done with " + player.getPlayerName() + ". You can no run your tests.");
         System.out.println(player.getPlayerName() + ", I'm Jane from earlier. It's getting late so lets get on with it.");
         System.out.println("*The choices are:*\n1)Do I have to Jane\n2)Okay \n3)Yes I'm ready to start \n4)*Tell her your account number*");
@@ -93,7 +92,7 @@ public class Story {  //story line of the game, Im so sick of it hope its fresh 
     }
 
     public void story4(Player player, Jane jane, Bill bill) {
-        System.out.println("\n------------------------------------------------------------------------------------------------------------------------------------\n");
+        CommonMethods.drawLine();
         CommonMethods.printALine(player.getPlayerName() + ", its Bill again so in now that we've ran our high tech tests, we're going to tell you about us\nwe are programmers tasked to create a new AI to serve and protect human settlements in Uranus.");
         CommonMethods.printALine("You are the 7th programme in the " + player.getPlayerName() + "project, previous 6 have all failed in the final stage");
         first.end(jane,bill);

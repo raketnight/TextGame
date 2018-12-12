@@ -24,4 +24,8 @@ public class CommonMethods {
         Story.myScanner.nextLine();
     }
 
+    public static void drawLine(){
+        System.out.println("\n------------------------------------------------------------------------------------------------------------------------------------\n");
+    }
+
 }
